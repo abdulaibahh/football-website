@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Meet the Sierra Leone National Football Squad. Filter and search player profiles, stats, and biographies."/>
+    <title>SLFA | Players - Squad Profiles</title>
+    <link rel="icon" type="image/png" href="./images/favicon.png" />
+    <link rel="stylesheet" href="./main.css" />
+    <script src="./main.js" defer></script>
+  </head>
+  <body>
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <header class="header">
+      <div class="container header-content">
+        <a href="./index.html" class="logo" aria-label="SLFA Home">
+          <img src="./images/LOGO_SLFA.png" alt="LOGO"
+        /></a>
+        <nav class="nav" role="navigation" aria-label="Main Navigation">
+          <a href="./index.html">Home</a>
+          <a href="./players.html">Players</a>
+          <a href="./matches.html">Matches</a>
+          <a href="./about.html">About Us</a>
+          <a href="./contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <section id="players-page">
+      <h2 class="section-title">The Squad</h2>
+
+      <div class="player-search" role="search">
+        <input type="text" placeholder="Search player by name..." aria-label="Search player by name" />
+      </div>
+
+      <div class="player-filters" aria-label="Filter player profiles">
+        <select id="position-filter" aria-label="Filter by Position">
+          <option value="all">By Position</option>
+          <option value="goalkeeper">Goal Keeper</option>
+          <option value="defender">Defender</option>
+          <option value="midfielder">Midfielder</option>
+          <option value="attacker">Attacker</option>
+        </select>
+        <select id="club-filter" aria-label="Filter by Club">
+          <option value="all">By Club</option>
+          <option value="east end lions">East End Lions</option>
+          <option value="mighty blackpool">Mighty Blackpool</option>
+          <option value="kamboi eagles">Kamboi Eagles</option>
+          <option value="bo rangers">Bo Rangers</option>
+        </select>
+        <select id="age-filter" aria-label="Filter by Age">
+          <option value="all">By Age</option>
+          <option value="18–20">18–20</option>
+          <option value="21–25">21–25</option>
+          <option value="26–30">26–30</option>
+          <option value="31+">31+</option>
+        </select>
+      </div>
+
+      <div class="player-grid">
+        </div>
+      
+      <div id="player-profile-detail" class="profile-section" role="article" aria-hidden="true">
+        <div class="profile-img">
+          <img id="profile-img-large" src="" alt="Detailed profile image" />
+        </div>
+        <div class="profile-info">
+          <h3 id="profile-name-detail"></h3>
+          <p><strong>Position:</strong> <span id="profile-position"></span></p>
+          <p><strong>D.O.B:</strong> <span id="profile-dob"></span></p>
+          <p><strong>Current Club:</strong> <span id="profile-club"></span></p>
+          <p><strong>Jersey Number:</strong> <span id="profile-number"></span></p>
+          <div class="bio-buttons">
+            <button role="button" id="download-cv" aria-label="Download CV">Download CV</button>
+            <button role="button" id="contact-agent" aria-label="Contact Agent">Contact Agent</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="biography" aria-hidden="true">
+        <h3>Biography</h3>
+        <p id="profile-bio"></p>
+      </div>
+
+      <div class="stats-section" aria-hidden="true">
+        <h3>Career Statistics (Current Season)</h3>
+        <div class="stats-grid">
+          <div class="stat-box">
+            <label>Appearances</label>
+            <input type="text" id="stat-appearances" readonly aria-label="Appearances" />
+          </div>
+          <div class="stat-box">
+            <label>Goals</label>
+            <input type="text" id="stat-goals" readonly aria-label="Goals" />
+          </div>
+          <div class="stat-box">
+            <label>Assists</label>
+            <input type="text" id="stat-assists" readonly aria-label="Assists" />
+          </div>
+          <div class="stat-box">
+            <label>Yellow Cards</label>
+            <input type="text" id="stat-yellow" readonly aria-label="Yellow Cards" />
+          </div>
+          <div class="stat-box">
+            <label>Red Cards</label>
+            <input type="text" id="stat-red" readonly aria-label="Red Cards" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <div class="footer-content">
+        <div class="footer-left">
+          <h4>Quick links</h4>
+          <div class="footer-links">
+            <a href="./index.html">Home</a>
+            <a href="./players.html">Players</a>
+            <a href="./matches.html">Matches</a>
+            <a href="./about.html">About Us</a>
+            <a href="./contact.html">Contact Us</a>
+          </div>
+        </div>
+
+        <div class="footer-right">
+          <p>Contact details: info@slfa.com | +232 75 756 395</p>
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook">
+              <img
+                src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/facebook.svg"
+                alt="Facebook"
+              />
+            </a>
+            <a href="#" aria-label="WhatsApp">
+              <img
+                src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/whatsapp.svg"
+                alt="WhatsApp"
+              />
+            </a>
+            <a href="#" aria-label="Twitter">
+              <img
+                src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/twitter.svg"
+                alt="Twitter"
+              />
+            </a>
+            <a href="#" aria-label="LinkedIn">
+              <img
+                src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg"
+                alt="LinkedIn"
+              />
+            </a>
+            <a href="#" aria-label="YouTube">
+              <img
+                src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/youtube.svg"
+                alt="YouTube"
+              />
+            </a>
+            <a href="#" aria-label="Instagram">
+              <img
+                src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg"
+                alt="Instagram"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+      <p class="copyright">© <span id="current-year">2025</span> SLFA. All rights reserved.</p>
+    </footer>
+
+    <button id="back-to-top" aria-label="Back to Top">↑</button>
+  </body>
+</html>
