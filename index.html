@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="The official website of the Sierra Leone Football Association (SLFA). Latest news, matches, and player profiles."/>
+    <meta
+      name="description"
+      content="The official website of the Sierra Leone Football Association (SLFA). Latest news, matches, and player profiles."
+    />
     <title>SLFA | Home - Sierra Leone Football Association</title>
     <link rel="icon" type="image/png" href="./images/favicon.png" />
     <link rel="stylesheet" href="./main.css" />
@@ -11,13 +14,13 @@
   </head>
   <body>
     <div id="preloader">
-        <div class="loader"></div>
+      <div class="loader"></div>
     </div>
-    
+
     <header class="header">
       <div class="container header-content">
         <a href="./index.html" class="logo" aria-label="SLFA Home">
-          <img src="./images/LOGO_SLFA.png" alt="SLFA Logo" />
+          <img src="./images/LOGO_SLFA.jpg" alt="SLFA Logo" />
         </a>
         <nav class="nav" role="navigation" aria-label="Main Navigation">
           <a href="./index.html">Home</a>
@@ -40,8 +43,12 @@
           latest football news.
         </p>
         <div class="btn-group">
-          <a href="./matches.html" class="primary-btn" role="button">View Fixtures</a>
-          <a href="./players.html" class="secondary-btn" role="button">Meet The Squad</a>
+          <a href="./matches.html" class="primary-btn" role="button"
+            >View Fixtures</a
+          >
+          <a href="./players.html" class="secondary-btn" role="button"
+            >Meet The Squad</a
+          >
         </div>
       </div>
     </section>
@@ -52,15 +59,20 @@
         <div class="content-grid">
           <div class="card">
             <div class="card-img">
-              <img src="./images/Recent Progress.jpg" alt="Team celebrating a win" />
+              <img
+                src="./images/Recent Progress.jpg"
+                alt="Team celebrating a win"
+              />
             </div>
             <div class="card-content">
-              <h3> Leone Stars Qualify for AFCON 2026!</h3>
+              <h3>Leone Stars Qualify for AFCON 2026!</h3>
               <p>
                 A nail-biting finish sees Sierra Leone secure their spot in the
                 prestigious African Cup of Nations tournament.
               </p>
-              <a href="#" aria-label="Read more about AFCON qualification">Read More</a>
+              <a href="#" aria-label="Read more about AFCON qualification"
+                >Read More</a
+              >
             </div>
           </div>
 
@@ -77,13 +89,18 @@
                 Our commitment to grassroots football grows with the induction
                 of the largest youth class in five years.
               </p>
-              <a href="#" aria-label="Read more about the Youth Academy">Read More</a>
+              <a href="#" aria-label="Read more about the Youth Academy"
+                >Read More</a
+              >
             </div>
           </div>
 
           <div class="card">
             <div class="card-img">
-              <img src="./images/construct-stadium.jpg" alt="Stadium construction" />
+              <img
+                src="./images/construct-stadium.jpg"
+                alt="Stadium construction"
+              />
             </div>
             <div class="card-content">
               <h3>New Stadium Development Update</h3>
@@ -91,7 +108,9 @@
                 Construction on the new National Stadium is ahead of schedule
                 with the foundation stone laid this week.
               </p>
-              <a href="#" aria-label="Read more about stadium development">Read More</a>
+              <a href="#" aria-label="Read more about stadium development"
+                >Read More</a
+              >
             </div>
           </div>
         </div>
@@ -100,58 +119,74 @@
 
     <section id="highlights" class="section" style="background-color: var(--light-bg);">
       <div class="container">
-        <h2 class="section-title">Video Highlights</h2>
-        <div class="content-grid">
-          <div class="card">
-            <div class="card-img">
-              <video controls poster="./images/match-poster-1.jpg" aria-label="Video highlight of Goal of the Month January">
-                <source src="./videos/musa-goal.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            </div>
-            <div class="card-content">
-              <h3>Goal of the Month: January</h3>
-              <p>
-                Watch the stunning bicycle kick from Musa Tombo against Bo Rangers!
-              </p>
-              <a href="#">Watch Full Clip</a>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-img">
-                <video controls poster="./images/match-poster-1.jpg" aria-label="match highlight">
-                  <source src="./videos/Match Performance.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
+          <h2 class="section-title">Video Highlights</h2>
+          <div class="content-grid">
+              
+              <div class="card">
+                  <div class="card-img video-container">
+                      <iframe 
+                          width="100%" 
+                          height="315" 
+                          src="https://www.youtube.com/embed/Te_eyp8I5XM" 
+                          title="YouTube video player: Sierra Leone forward Musa Tombo's first goal against Ivory Coast" 
+                          frameborder="0" 
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                          allowfullscreen
+                      ></iframe>
+                  </div>
+                  <div class="card-content">
+                      <h3>Goal of the Month: January</h3>
+                      <p>
+                          Watch the stunning goal from Musa Tombo, a worthy Goal of the Month winner!
+                      </p>
+                      <a href="https://www.youtube.com/watch?v=Te_eyp8I5XM" target="_blank">Watch Full Clip</a> 
+                  </div>
               </div>
-            <div class="card-content">
-              <h3>Full Match Replay: SLFA vs Gambia</h3>
-              <p>
-                A dominant performance from the midfield leading to a convincing 3-0 victory.
-              </p>
-              <a href="#">Watch Replay</a>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-img">
-                <video controls poster="./images/match-poster-1.jpg" aria-label="Training session">
-                  <source src="./videos/Training sessions.mp4" type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
+  
+              <div class="card">
+                  <div class="card-img video-container">
+                      <iframe 
+                          width="100%" 
+                          height="315" 
+                          src="https://www.youtube.com/embed/GK2fB4EdykI" 
+                          title="YouTube video player: SLFA vs Gambia Match" 
+                          frameborder="0" 
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                          allowfullscreen
+                      ></iframe>
+                  </div>
+                  <div class="card-content">
+                      <h3>Full Match Replay: SLFA vs Gambia</h3>
+                      <p>
+                          A dominant performance from the midfield leading to a convincing 3-0 victory.
+                      </p>
+                      <a href="https://www.youtube.com/watch?v=GK2fB4EdykI" target="_blank">Watch Replay</a>
+                  </div>
               </div>
-            <div class="card-content">
-              <h3>Behind the Scenes: Training Camp</h3>
-              <p>
-                An exclusive look at the team's preparations and bonding during the pre-season camp.
-              </p>
-              <a href="#">Watch Now</a>
-            </div>
+  
+              <div class="card">
+                  <div class="card-img video-container">
+                      <iframe 
+                          width="100%" 
+                          height="315" 
+                          src="https://www.youtube.com/embed/d0YWZMP41vA" 
+                          title="YouTube video player: Behind the scenes footage of the Sierra Leone national team" 
+                          frameborder="0" 
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                          allowfullscreen
+                      ></iframe>
+                  </div>
+                  <div class="card-content">
+                      <h3>Behind the Scenes: Training Camp</h3>
+                      <p>
+                          An exclusive look at the team's preparations and bonding during the pre-season camp.
+                      </p>
+                      <a href="https://www.youtube.com/watch?v=d0YWZMP41vA" target="_blank">Watch Now</a>
+                  </div>
+              </div>
           </div>
-        </div>
       </div>
-    </section>
+  </section>
 
     <footer id="footer">
       <div class="footer-content">
@@ -208,10 +243,11 @@
           </div>
         </div>
       </div>
-      <p class="copyright">© <span id="current-year">2025</span> SLFA. All rights reserved.</p>
+      <p class="copyright">
+        © <span id="current-year">2025</span> SLFA. All rights reserved.
+      </p>
     </footer>
 
     <button id="back-to-top" aria-label="Back to Top">↑</button>
-
   </body>
 </html>
